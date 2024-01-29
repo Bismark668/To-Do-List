@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.main-container{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 4rem;
+    background: linear-gradient( rgb(2, 2, 29),rgb(204, 29, 160));
+  
+}
+
+.to-do-app{
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    background-color: rgb(201, 211, 219);
+}
+
+.to-do-app h2{
+    margin-bottom: 20px;
+    color: #310d94;
+}
+.list-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(172, 165, 155);
+    padding-left: 30px;
+    margin-bottom: 25px;
+    border-radius: 30px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 16px;
+}button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #5a2adf;
+    color: white;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+    font-size: 16px;
+    padding: 5px 5px 8px 30px;
+    cursor: pointer;
+    
+}
+
+
+@media screen and (max-width: 530px){
+    .main-container{
+        padding-top: 2.5rem;
+
+    }
+    .to-do-app{
+        width: 100%;
+        margin-top: 20px;
+        max-width: 500px;
+        padding: 20px 1px 30px;
+        border-radius: 10px;
+        background-color: rgb(201, 211, 219);
+    }
+    
+}
