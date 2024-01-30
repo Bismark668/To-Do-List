@@ -9,14 +9,14 @@
     width: 100%;
     min-height: 100vh;
     padding-top: 4rem;
-    background: linear-gradient( rgb(2, 2, 29),rgb(204, 29, 160));
+    background: linear-gradient( rgb(132, 196, 15),rgb(12, 12, 34));
   
 }
 
 .to-do-app{
     width: 100%;
     max-width: 540px;
-    margin: 100px auto 20px;
+    margin: 50px auto;
     padding: 40px 30px 70px;
     border-radius: 10px;
     background-color: rgb(201, 211, 219);
@@ -32,7 +32,7 @@
     justify-content: space-between;
     background-color: rgb(172, 165, 155);
     padding-left: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     border-radius: 30px;
 }
 
@@ -40,6 +40,7 @@ input{
     flex: 1;
     border: none;
     outline: none;
+    font-size: 18px;
     background: transparent;
     padding: 10px;
     font-weight: 16px;
@@ -54,12 +55,52 @@ input{
     cursor: pointer;
 }
 
-ul li{
+.list-style{
     list-style: none;
-    font-size: 16px;
-    padding: 5px 5px 8px 30px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    user-select: none;
+    padding: 10px 5px 8px 30px;
     cursor: pointer;
-    
+    position: relative; 
+}
+
+.list-style::before{
+    content: " ";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(images/uncecked.png);
+    background-size: contain;
+    background-position: center;
+    left: -8px;
+    top: 3px;
+}
+
+.Checked{
+    color: #6b6363;
+    text-decoration: line-through;
+}
+
+.Checked::before{
+    background-image: url(images/pngtree-check.jpg);
+}
+
+span{
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+    border-radius: 50%;
+    color: #645757;
+    text-align: center;  
+}
+
+span:hover{
+    background: #9ab2ca;
 }
 
 
