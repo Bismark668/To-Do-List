@@ -6,7 +6,7 @@ const listItems = document.getElementById('listitems')
 // ADDING A NEW TASK
 
 btn.addEventListener('click',function(){
-    if (inputBox.value === ""){
+    if (inputBox.value === " "){
         alert ('Please Enter A New Task ...')
     }
     else{
@@ -19,24 +19,16 @@ btn.addEventListener('click',function(){
         paragrah.appendChild(span)
        inputBox.value = " "
 
-
-
+        // Completed Task and Task Deleting
         paragrah.addEventListener('click',function(){
-            paragrah.classList.add('Checked')
-
-            
+            paragrah.classList.add('Checked') 
         })
-        
+
         span.addEventListener('click',function(){
             listItems.removeChild(paragrah)
-            
-
         })
 
     } 
-    
-    
-
 })
 
 // // local storage
